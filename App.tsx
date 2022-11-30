@@ -14,8 +14,8 @@ export default function App() {
   } else {
     return (
       <SafeAreaProvider>
-        {/* <Navigation colorScheme={colorScheme} /> */}
-        <MovieDetailScreen />
+        <Navigation colorScheme={colorScheme} />
+
         <StatusBar />
       </SafeAreaProvider>
     );
