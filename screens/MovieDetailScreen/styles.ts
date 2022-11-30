@@ -70,6 +70,17 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     lineHeight: 20,
   },
+  backButton: {
+    position: 'absolute',
+    top: 60,
+    left: 10,
+    zIndex: 100,
+    backgroundColor: '#000',
+    padding: 10,
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
 
 export default styles;
