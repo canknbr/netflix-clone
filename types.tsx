@@ -18,7 +18,7 @@ declare global {
 
 export type RootStackParamList = {
   Root: NavigatorScreenParams<RootTabParamList> | undefined;
-  Modal: undefined;
+  'Movie Detail': undefined;
   NotFound: undefined;
 };
 
@@ -27,8 +27,8 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
 
 export type RootTabParamList = {
   Home: undefined;
-  Search : undefined;
-  "Coming Soon": undefined;
+  Search: undefined;
+  'Coming Soon': undefined;
   Downloads: undefined;
 };
 

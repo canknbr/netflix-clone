@@ -24,6 +24,7 @@ import useColorScheme from '../hooks/useColorScheme';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import HomeScreen from '../screens/HomeScreen';
+import MovieDetailScreen from '../screens/MovieDetailScreen';
 import ComingSoonScreen from '../screens/ComingSoonScreen';
 import SearchScreen from '../screens/SearchScreen';
 import DownloadsScreen from '../screens/DownloadsScreen';
@@ -58,7 +59,11 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Stack.Screen
         name="Root"
         component={BottomTabNavigator}
@@ -68,6 +73,11 @@ function RootNavigator() {
         name="NotFound"
         component={NotFoundScreen}
         options={{ title: 'Oops!' }}
+      />
+      <Stack.Screen
+        name="Movie Detail"
+        component={MovieDetailScreen}
+        options={{ title: 'Movie Detail' }}
       />
     </Stack.Navigator>
   );
